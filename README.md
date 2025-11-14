@@ -1,52 +1,22 @@
-# Easy Bank Configuration
+# Configuration Management Repository
 
-## Overview
-This repository contains the configuration setup for the Easy Bank application. This documentation provides a detailed guide on how to configure and set up the application for development and production environments.
+This repository contains YAML files for managing configurations across various environments.
 
-## Table of Contents
-1. [Installation](#installation)
-2. [Configuration Files](#configuration-files)
-3. [Environment Variables](#environment-variables)
-4. [Usage](#usage)
-5. [Troubleshooting](#troubleshooting)
+## Services
 
-## Installation
-To install the Easy Bank application, clone the repository and install the necessary dependencies:
+### Accounts
+- Configuration files for user accounts management.
 
-```bash
-git clone https://github.com/Ahmed123927/easy-bank-configration.git
-cd easy-bank-configration
-npm install  # or use yarn install
-```
+### Cards
+- Configuration files for payment and card services.
 
-## Configuration Files
-- **config.json**: This is the main configuration file located in the root of the project. It contains all the essential parameters for the application.
-- **database.json**: This file contains database configuration settings such as host, user, password, and database name.
+### Loans
+- Configuration files for loan management services.
 
-## Environment Variables
-Make sure to set the following environment variables before starting the application:
-- `DB_HOST`: Database host
-- `DB_USER`: Database username
-- `DB_PASS`: Database password
-- `APP_PORT`: Port on which the application will run
+## Environments
+- **Development**: Files for the development environment.
+- **QA**: Files for quality assurance testing.
+- **Production**: Files for the production environment.
 
 ## Usage
-To run the application in development mode, use the following command:
-
-```bash
-npm run dev
-```
-
-For production, build the application and run:
-
-```bash
-npm run build
-npm start
-```
-
-## Troubleshooting
-- If you face issues connecting to the database, ensure that your credentials in `database.json` are correct.
-- For any errors during the startup, check the logs for detailed messages.
-
-## Conclusion
-This documentation should help you set up the Easy Bank configuration effectively. For further questions, please refer to the issues section of the repository or raise a new issue.
+Ensure that you have the correct configuration files set up for the respective services and environments before deployment.
